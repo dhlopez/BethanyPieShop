@@ -11,6 +11,21 @@
     <link href="~/Content/site.css" rel="stylesheet" />
 </head>
 <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top navbar-expand-lg" >
+        <div class="container">
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" asp-controller="Home" asp-action="Index">Home</a>
+                        <a class="nav-link active" aria-current="page" asp-controller="Pie" asp-action="List">Pies</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <div class="container">
         <div class="row">
             <div class="col-md-3">
