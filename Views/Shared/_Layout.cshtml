@@ -22,6 +22,7 @@
                     @*<li class="nav-item"><a class="nav-link active" aria-current="page" asp-controller="Pie" asp-action="List">Pies</a></li>*@
                     @await Component.InvokeAsync("CategoryMenu")
                     @await Component.InvokeAsync("ShoppingCartSummary")
+                    <partial name="_LoginPartial"/>
                     <li class="nav-item"><a class="nav-link active" aria-current="page" asp-controller="Contact" asp-action="Index">Contact</a></li>
                 </ul>
             </div>
@@ -39,5 +40,6 @@
             </div>
         </div>
     </div>
+    @RenderSection("Scripts", required:false)
 </body>
 </html>
